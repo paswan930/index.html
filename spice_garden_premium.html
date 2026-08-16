@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spice Garden — Indian Restaurant</title>
+<style>
+:root{--red:#b9381e;--dark:#241711;--cream:#fff8ef;--gold:#d49a3a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--cream);color:var(--dark)}
+nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px 7%;background:#fffdf9ee;backdrop-filter:blur(10px);border-bottom:1px solid #eadfd2}
+.logo{font-size:24px;font-weight:900;color:var(--red)}nav a{color:var(--dark);text-decoration:none;margin-left:22px;font-weight:700}
+.hero{min-height:78vh;padding:70px 7%;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center;background:radial-gradient(circle at 80% 30%,#ffd9a8 0 12%,transparent 35%),linear-gradient(135deg,#fff8ef,#f7dfc6)}
+.badge{display:inline-block;background:#fff;border:1px solid #ead5c2;border-radius:99px;padding:8px 14px;font-weight:700;color:var(--red)}
+h1{font-size:clamp(46px,7vw,78px);line-height:.98;margin:18px 0}.hero h1 span{color:var(--red)}.hero p{font-size:18px;max-width:580px;color:#68564a}
+.btn{display:inline-block;background:var(--red);color:white;text-decoration:none;padding:14px 22px;border-radius:12px;font-weight:800;margin-top:12px;box-shadow:0 10px 25px #b9381e30}
+.food{min-height:390px;border-radius:35px;background:linear-gradient(145deg,#9e301c,#e27a35);display:flex;align-items:center;justify-content:center;font-size:140px;box-shadow:0 25px 60px #5c281b30;transform:rotate(2deg)}
+section{padding:80px 7%}.heading{text-align:center;margin-bottom:40px}.heading h2{font-size:40px;margin:0 0 8px}.heading p{color:#76655a}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #eee0d2;border-radius:22px;padding:25px;box-shadow:0 10px 30px #3b1d0b0c}.icon{font-size:52px}.card h3{margin:12px 0 5px}.card p{color:#6d5c50}.price{font-size:20px;font-weight:900;color:var(--red)}
+.story{background:var(--dark);color:white;text-align:center}.story p{max-width:750px;margin:auto;color:#dfd2c8;font-size:18px}
+.contact{text-align:center}.contact-box{max-width:700px;margin:auto;background:#fff;padding:35px;border-radius:25px;box-shadow:0 12px 35px #00000010}.contact-box p{color:#6d5c50}
+footer{text-align:center;background:#170f0b;color:#d9cbc1;padding:25px}
+@media(max-width:760px){nav a{display:none}.hero{grid-template-columns:1fr;padding-top:50px}.food{min-height:270px;font-size:100px}.menu{grid-template-columns:1fr}section{padding:60px 6%}}
+</style>
+</head>
+<body>
+<nav><div class="logo">🌶️ Spice Garden</div><div><a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div><span class="badge">⭐ Loved by local foodies</span><h1>Real Indian food.<br><span>Real flavour.</span></h1><p>Fresh ingredients, traditional spices and comforting recipes — served warm, every day.</p><a class="btn" href="#contact">Reserve a Table →</a></div>
+<div class="food">🍛</div>
+</header>
+
+<section id="menu"><div class="heading"><h2>Customer Favorites</h2><p>Freshly prepared and full of flavour</p></div>
+<div class="menu">
+<article class="card"><div class="icon">🍛</div><h3>Butter Chicken</h3><p>Rich tomato gravy, tender chicken and aromatic spices.</p><div class="price">₹249</div></article>
+<article class="card"><div class="icon">🧀</div><h3>Paneer Tikka</h3><p>Char-grilled paneer, peppers and a smoky spice blend.</p><div class="price">₹199</div></article>
+<article class="card"><div class="icon">🍚</div><h3>Veg Biryani</h3><p>Fragrant basmati rice layered with fresh vegetables.</p><div class="price">₹179</div></article>
+</div></section>
+
+<section class="story" id="story"><div class="heading"><h2>Our Story</h2></div><p>Spice Garden brings the warmth of Indian home-style cooking to your table. Whether it’s a family dinner, a celebration or a quick lunch, we make every meal special.</p></section>
+
+<section id="contact" class="contact"><div class="heading"><h2>Come hungry. Leave happy.</h2><p>We'd love to serve you.</p></div><div class="contact-box"><p>📍 Main Market, Your City</p><p>🕐 Mon–Sun · 11:00 AM – 10:30 PM</p><p>📞 +91 98765 43210</p><a class="btn" href="tel:+919876543210">Call to Reserve</a></div></section>
+<footer>© 2026 Spice Garden · Fresh food, happy people.</footer>
+</body>
+</html>
